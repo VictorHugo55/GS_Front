@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Azul</title>
+    <script src="https://kit.fontawesome.com/3b3f342cfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav id="menufixo">
+        <a href=""><img src="/img/logoPortalAzul.png" alt="logo do site Portal Azul"></a>
+
+        <div class="menu-hambuguer">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="lista-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="quemSomos.html">QUEM SOMOS</a></li>
+            <li><a href="artigos.html">ARTIGOS</a></li>
+            <li><a href="campanhas.html">CAMPANHAS</a></li>
+            <li><a href="contato.html">CONTATOS</a></li>
+        </ul>
+        <div class="Container-DoarDenunciar">
+            <div class="linkDoar">
+                <a href="">DOE</a>
+            </div>
+            <div class="linkDenunciar" href="index.html">
+                <a href="">DENUNCIE</a>
+            </div>
+        </div>
+    </nav>
+    <section id="section-Contato">
+        <article>
+            <div class="infos-contatos">
+                <h1> Envie uma Mensagem</h1>
+                <p>Com seu feedback podemos sempre melhorar</p>
+            </div>
+            <div class="mensagem-contato">
+                
+            <form action="" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+            </form>
+        </div>
+        </article>
+    </section>
+    <footer>
+        <p>Portal Azul©</p>
+        <p>2024</p>
+        <div>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
