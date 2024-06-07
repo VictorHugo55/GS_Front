@@ -711,3 +711,70 @@ h3{
     border: none;
     cursor: pointer;
 }
+
+/* contatos*/
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+.container a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}       
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.service-image {
+    width: 100%; /* This will cover the width of the section */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
