@@ -1,0 +1,1150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FDFDFD
+}
+a{
+    text-decoration: none;
+}
+/* MENU FIXO */
+#menufixo a {
+    color: #929292;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+a:hover{
+    color: #2B79EE;
+}
+  #menufixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    background: #FDFDFD;
+    height: 12vh;
+    padding: 0px 50px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 5px rgba(82, 82, 82, 0.5);
+    z-index: 99;
+  }
+  #menufixo img{
+    width: 8rem;
+  }
+  .lista-menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .lista-menu li {
+    margin-left: 32px;
+  }
+  
+  .menu-hambuguer {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-hambuguer div {
+    width: 32px;
+    height: 2px;
+    background: #2B79EE;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  .lista-menu.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .menu-hambuguer.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .menu-hambuguer.active .line2 {
+    opacity: 0;
+  }
+  
+  .menu-hambuguer.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+.Container-DoarDenunciar{
+    align-items: center;
+    display: flex;
+}
+.linkDoar a{
+    padding: 8px 30px;
+    border: solid  2px #1A9635;
+    color: #535353;
+    border-radius: 8px;
+}
+.linkDoar:hover a{
+    color: #FDFDFD;
+    background-color: #1A9635;
+    cursor: pointer;
+}
+.linkDoar{
+    transition: transform 0.5s;
+}
+.linkDoar:hover{
+    transform: translate(0px,-5px);
+}
+.linkDenunciar a{
+    margin-left: 10px;
+    color: #535353;
+    padding: 8px 15px;
+    border: solid  2px #CD1818;
+    border-radius: 8px;
+}
+.linkDenunciar:hover a{
+    color: #FDFDFD;
+    background-color: #CD1818;
+    cursor: pointer;
+}
+.linkDenunciar{
+    transition: transform 0.5s;
+}
+.linkDenunciar:hover{
+    transform: translate(0px,-5px);
+}
+
+/* IMAGEM E INFORMAÇOES HEADER */
+.DestaqueHome{
+    height: 34.9rem;
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(15, 9, 53, 0.452)
+    ), url(/img/ONDAnoMAR.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.containerH1-DestaqueHome{
+    width: 38rem;
+    padding: 70px 0px 15px 4.4rem;
+    letter-spacing: 8px;
+
+}
+.DestaqueHome h1{
+    color: #FDFDFD;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 64px;
+}
+.containerP-DestaqueHome{
+    padding-left: 4.4rem;
+}
+.DestaqueHome p{
+    font-family: 'Roboto Mono';
+    color: #FDFDFD;
+    font-size: 20px;
+    font-weight: 400;
+}
+.containerA-DestaqueHome{
+    padding: 15px 0px 0px 4.4rem;
+}
+.linkConhecer{
+    padding-top: 20px;
+    transition: transform 0.5s;
+}
+.linkConhecer:hover{
+    transform: translate(10px,0px);
+}
+.linkConhecer a{
+    padding: 8px 30px;
+    border: solid  2px #FDFDFD;
+    color: #FDFDFD;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: 500;
+}
+.linkConhecer:hover a{
+    color: #535353;
+    background-color: #FDFDFD;
+    cursor: pointer;
+}
+
+/* ARTICLE FALANDO DOS ARTIGOS */
+
+/* titulo e subtitulo */
+.CentralizarItens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Container-sobreartigos h1{
+    text-align: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-size: 36px;
+    color: #2B79EE;
+    font-weight: 600;
+    padding-top: 70px;
+}
+.Container-sobreartigos p{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    color: #7E7E7E;
+    padding: 12px 0px;
+}
+
+/* Containers com os artigos */
+.container_artigos{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px
+}
+.container_artigos img, .container_artigos p{
+    width: 20rem;
+}
+.container_artigos p{
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    padding: 15px 30px 5px 30px;
+    color: #535353;
+    font-weight: 700;
+    text-align: justify;
+}
+.artigo-exemplo i{
+    color: #535353;
+    padding: 5px 270px 15px 30px;
+    font-size: 20px;    
+}
+.artigo-exemplo{
+    background-color: #e7e7e7;
+}
+.artigo-exemplo:hover p{
+    color: #2B79EE;
+}
+.CentralizarItens h3{
+    text-align: center;
+    width: 45rem;
+    font-size: 20px;
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    color: #7E7E7E;
+    padding-top: 28px;
+}
+.BTNazul{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: transform 0.5s;
+}
+.BTNazul:hover{
+    transform: translate(10px,0px);
+}
+.BTNazul a{
+    padding: 8px 30px;
+    border: solid  2px #2B79EE;
+    color: #2B79EE;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: 500;
+}
+.BTNazul:hover a{
+    color: #FDFDFD;
+    background-color: #2B79EE;
+    cursor: pointer;
+}
+
+/* Inicio do Article falando das Campanhas na pagina HOME*/
+
+#campanhasHOME{
+    background-color: #E6ECF1;
+}
+.Container-sobreCampanhas h1{
+    text-align: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-size: 36px;
+    color: #2B79EE;
+    font-weight: 600;
+    padding-top: 50px;
+}
+.Container-sobreCampanhas p{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    color: #7E7E7E;
+    padding: 12px 0px 50px 0px;
+}
+
+.container_logosONG{
+    display: grid;
+    grid-template-columns: repeat(3 , 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 30px;
+}
+.logoONG3 img, .logoONG6 img{
+    width: 200px;
+}
+.Container-sobreCampanhas h3{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Roboto Mono';
+        font-weight: 700;
+        color: #7E7E7E;
+        padding-top: 28px;
+}
+
+/* Article falando sobre contato */
+
+.Container-sobreContato{
+    padding: 30px 0px;
+}
+.Container-sobreContato h1{
+    text-align: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-size: 36px;
+    color: #2B79EE;
+    font-weight: 600;
+    padding-top: 50px;
+}
+.Container-sobreContato p{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    color: #7E7E7E;
+    padding: 15px 0px 0px 0px;
+}
+
+/* Footer */
+footer{
+    height: 80px;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7e7;
+    font-family: 'inter';
+    color: #3d3d3d;
+}
+footer i{
+    font-size: 30px;
+    padding: 5px;
+    color: #2B79EE;
+}
+
+/* PAGINA QUEM SOMOS */
+
+.container-quemSomos{
+    background-color: #e7e7e7;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 40px;
+}
+
+.container-quemSomos h1{
+    padding: 60px 60px 30px 60px;
+    font-family: 'Roboto Mono';
+    font-size: 55px;
+    font-weight: 700;
+    color: #2B79EE;
+}
+.container-quemSomos p{
+    font-family: 'Inter';
+    color: #535353;
+    font-size: 24px;
+    font-weight:500;
+    padding: 0px 60px 20px 60px;
+    text-align: justify;
+}
+.container-quemSomos span{
+    color: #202020;
+    font-weight: 700;
+}
+.container-quemSomos h3{
+    padding: 30px 60px 30px 60px;
+    font-family: 'Roboto Mono';
+    font-size: 38px;
+    font-weight: 700;
+    color: #2B79EE;
+}
+.h1Integrantes{
+    color: #2B79EE;
+    font-family: 'Roboto mono';
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 30px;
+
+}
+.integrantes-QuemSomos{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.integrantes-QuemSomos img{
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+.integrantes-QuemSomos h2{
+    padding: 5px 0px;
+    font-size: 28px;
+    font-family: 'Roboto mono';
+    color: #585858;
+}
+.integrantes-QuemSomos span{
+    font-size: 18px;
+    font-family: 'Roboto mono';
+    color: #585858;
+}
+.integrantes-QuemSomos p{
+    padding: 5px 0px;
+    font-size: 22px;
+    font-family: 'Roboto mono';
+    color: #585858;
+}
+.integrante1, .integrante2, .integrante3{
+    padding: 40px;
+    background-color: #e7e7e7;
+    margin: 10px;
+}
+.integrantes-RedesSociais{
+    display: flex;
+    font-size: 25px;
+}
+.integrantes-RedesSociais i{
+    color: #FDFDFD;
+}
+.integrantes-RedesSociais a{
+    padding: 8px 14px;
+    background-color: #2B79EE;
+    border-radius: 8px;
+    margin: 5px;
+}
+/* PAGINA ARTIGOS */
+
+/* HEADER COM ARTIGOS NOVOS EM DESTAQUE */
+.ArtigosDestaque{
+    padding: 40px 70px;
+    display: grid;
+    grid-template-columns: repeat(2 , 48.5%);
+    grid-template-rows: repeat(2, 280px);
+    grid-template-areas:
+    "destaque1 destaque2"
+    "destaque1 destaque3";
+    gap: 30px;
+}
+.ARTdestaque1{
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(12, 8, 41, 0.712)
+    ), url(/img/PontaDoNavio.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    grid-area: destaque1;
+    height: 590px;
+    display: flex;
+    align-items: flex-end;
+}
+.ARTdestaque1 h1{
+    font-family: 'inter';
+    font-size: 45px;
+    font-weight: 700;
+    padding: 0px 40px 40px 40px;
+    color: #FDFDFD;
+}
+.ARTdestaque1:hover h1, .ARTdestaque2:hover h2, .ARTdestaque3:hover h2{
+    color: #cccccc;
+}
+.ARTdestaque1:hover{
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(31, 31, 31, 0.712)
+    ),url(/img/PontaDoNavio.jpg);
+}
+.ARTdestaque2{
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(12, 8, 41, 0.712)
+    ), url(/img/AlgaMarinha.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    grid-area: destaque2;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+.ARTdestaque2:hover{
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(31, 31, 31, 0.712)
+    ),url(/img/AlgaMarinha.jpg);
+}
+.ARTdestaque3{
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(12, 8, 41, 0.712)
+    ), url(/img/PeixePacu.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    grid-area: destaque3;
+    display: flex;
+    align-items: flex-end;
+}
+.ARTdestaque3:hover{
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(31, 31, 31, 0.712)
+    ),url(/img/PeixePacu.jpg);
+}
+.ArtigosDestaque h2{
+    font-family: 'inter';
+    font-size: 25px;
+    font-weight: 700;
+    padding: 150px 40px 40px 40px;
+    color: #FDFDFD;
+}
+/* ARTICLE COM ARTIGOS GERAIS */
+h3{
+    font-family: 'Roboto Mono';
+    text-align: center;
+    font-size: 40px;
+    color: #2B79EE;
+    font-weight: 700;
+    padding: 30px;
+}
+.ArtigosGerais{
+    padding: 40px 70px;
+    display: grid;
+    grid-template-columns: repeat(3 , 33,3%);
+    grid-template-rows: repeat(2);
+    grid-template-areas:
+    "artgeral1 artgeral2 artgeral3"
+    "artgeral4 artgeral5 artgeral6";
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 50px;
+}
+.ArtigosGerais img{
+    width: 100%;
+}
+.ArtigosGerais span{
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    font-weight: 500;
+    color: #535353;
+}
+.ArtigosGerais h1{
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    color: #081f41;
+    padding-top: 15px;
+}
+.ARTgeral1{
+    grid-area: artgeral1;
+}
+.ARTgeral2{
+    grid-area: artgeral2;
+}
+.ARTgeral3{
+    grid-area: artgeral3;
+}
+.ARTgeral4{
+    grid-area: artgeral4;
+}
+.ARTgeral5{
+    grid-area: artgeral5;
+}
+.ARTgeral6{
+    grid-area: artgeral6;
+}
+.ARTgeral1:hover h1, .ARTgeral2:hover h1 ,.ARTgeral3:hover h1 ,.ARTgeral4:hover h1 , .ARTgeral5:hover h1 , .ARTgeral6:hover h1{
+    color: #2B79EE;
+}
+
+/* PAGINA CAMPANHAS */
+.container-campanhas{
+    background-color: #f1f1f1;
+    padding:40px 70px;
+    margin:40px 70px;
+    display: grid;
+    grid-template-columns: repeat(2 , 49%);
+    grid-template-rows: repeat(1, 400px);
+    grid-template-areas: "imgCampanha1 conteudoCampanha1";
+    gap: 25px;
+}
+.imgCampanha1{
+    background-image: url(/img/LixoNaPraia.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    grid-area: imgCampanha1;
+}
+.conteudoCampanha1{
+    grid-area: conteudoCampanha1;
+}
+.conteudoCampanha1 h1{
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 600;
+    color: #2B79EE;
+}
+.conteudoCampanha1 p{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    color: #696969;
+    padding: 20px 30px;
+    text-align: justify;
+}
+.linkVerMais{
+    margin-top: 20px;
+    transition: transform 0.5s;
+    margin-left: 30px;
+}
+.linkVerMais:hover{
+    transform: translate(10px,0px);
+}
+.linkVerMais a{
+    padding: 8px 30px;
+    background-color: #1A9635;
+    color: #FDFDFD;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: 500;
+}
+.LikeInscrito{
+    position: sticky;
+    top: 100%;
+    padding: 0px 30px 0px 30px;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    color: #696969;
+}
+.LikeInscrito span{
+    padding-left: 5px;
+}
+
+/* PAGINA VENDO ARQUIVOS */
+
+.container-vendoArtigo{
+    padding: 40px 180px 70px 180px;
+}
+.container-vendoArtigo span{
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    color: #535353;
+}
+.container-vendoArtigo h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 43px;
+    color: #2B79EE;
+    width: 100%;
+    padding: 10px 0px 40px 0px;
+}
+.container-vendoArtigo img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.container-vendoArtigo p{
+    width: 100%;
+    font-family:'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    color: #585858;
+    text-align: justify;
+    padding: 10px 0px;
+}
+
+/* PAGINA VENDO CAMPANHA */
+
+.container-vendoCampanha{
+    padding: 45px 120px 70px 120px;
+}
+.container-vendoCampanha span{
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    color: #535353;
+}
+.imgVendoCampanha{
+    margin-top: 30px;
+    background-image: 
+    linear-gradient(
+      rgba(17, 12, 65, 0),rgba(12, 8, 41, 0.712)
+    ), url(/img/LixoNaPraia.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    grid-area: destaque3;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 100%;
+}
+.imgVendoCampanha h1{
+    font-family: 'Inter';
+    font-size: 72px;
+    font-weight: 700;
+    padding: 40px 40px;
+    color: #FDFDFD;
+    letter-spacing: 8px;
+}
+.infoCampanha{
+    padding: 40px 0px
+}
+.infoCampanha p{
+    padding: 8px 0px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'inter';
+    font-size: 36px;
+    font-weight: 500;
+    color: #3d3d3d;
+}
+.container-vendoCampanha h2{
+    font-size: 70px;
+    color: #2B79EE;
+    font-family: 'Inter';
+    font-weight: 700;
+    padding: 30px;
+}
+.beneficiosVendoCampanha{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.beneficioCampanha1, .beneficioCampanha2, .beneficioCampanha3{
+    width: 33%;
+    padding: 20px;
+}
+.beneficioCampanha1 i, .beneficioCampanha2 i, .beneficioCampanha3 i{
+    font-size: 70px;
+    color: #535353;
+    padding: 20px;
+}
+.beneficiosVendoCampanha p{
+    font-family: 'inter';
+    font-size: 24px;
+    font-weight: 500;
+    color: #535353;
+}
+.btsVoluntariarGostei{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkVoluntariar a{
+    margin-left: 70px;
+    padding: 15px 40px;
+    background-color: #1A9635;
+    color: #FDFDFD;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.btnCurtir button{
+    padding: 15px 25px;
+    margin-left: 10px;
+    background-color: #dbdbdb;
+    color: #df1414;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+/* PAGINA CONTATO */
+
+#section-Contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.infos-contatos{
+    text-align: center;
+}
+.infos-contatos h1{
+    font-family: 'Roboto Mono';
+    font-size: 36px;
+    color: #2B79EE;
+}
+.infos-contatos p{
+font-size: 22px;
+padding: 10px 0px 30px 0px;
+font-family: 'Inter';
+color: #686868;
+}
+
+.mensagem-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #dbdbdb;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 12px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.mensagem-contato h2{
+    color: #686868;
+    font-size: 3rem;
+    margin: 2rem;
+    font-family: 'Roboto Mono';
+}
+.mensagem-contato form{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.mensagem-contato form label{
+    color: #686868;
+    font-family: 'roboto mono';
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.mensagem-contato form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.mensagem-contato form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.mensagem-contato form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid #2B79EE;
+    border-radius: 8px;
+    color: #2B79EE;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+.mensagem-contato form button:hover{
+    background: #2B79EE;
+    color: #FDFDFD;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 980px) {
+    /* TODAS AS PAGINHAS MENU */
+    body {
+      overflow-x: hidden;
+    }
+    #menufixo img{
+        width: 6rem;
+      }
+    nav .Container-DoarDenunciar{
+        display: none;
+    }
+    .lista-menu {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 100vw;
+      height: 92vh;
+      background: #FDFDFD;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .lista-menu li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .menu-hambuguer {
+      display: block;
+    }
+    /* footer TODAS AS PAGINAS */
+    footer i{
+        padding: 3px;
+    }
+    /* PAGINA INDEX */
+    .containerH1-DestaqueHome{
+        width: 27rem;
+        padding-left: 30px;
+    }
+    .containerA-DestaqueHome{
+        padding-left: 30px;
+    }
+    .containerP-DestaqueHome{
+        padding-left: 30px;
+        width: 80%;
+    }
+    .DestaqueHome{
+        height: 28rem;
+    }
+    .DestaqueHome h1{
+        font-size: 40px;
+    }
+    .DestaqueHome p{
+        font-size: 16px;
+    }
+    .Container-sobreartigos h1{
+        font-size: 28px;
+    }
+    .Container-sobreartigos p{
+        font-size: 15px;
+    }
+    .container_artigos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .artigo-exemplo{
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+    .Container-sobreCampanhas h1, .Container-sobreContato h1{
+        font-size: 30px;
+        padding: 20px 20px;
+    }
+    .Container-sobreCampanhas p,.Container-sobreContato p{
+        padding: 0px 30px 30px 30px;
+    }
+    .container_logosONG{
+        grid-template-columns: repeat(2 , 150px);
+        grid-template-rows: repeat(3, 150px);
+        gap: 30px;
+    }
+    .logoONG1 img, .logoONG2 img, .logoONG3 img, .logoONG4 img, .logoONG5 img, .logoONG6 img{
+        width: 150px;
+    }
+    /* PAGINA QUEM SOMOS */
+    .container-quemSomos{
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    .container-quemSomos h1{
+        font-size: 32px;
+    }
+    .container-quemSomos p{
+        font-size: 16px;
+    }
+    .container-quemSomos h3{
+        font-size: 26px;
+    }
+    .h1Integrantes{
+        font-size: 32px;
+    }
+    .integrantes-QuemSomos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .integrante1, .integrante2, .integrante3{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+    /* PAGINA ARTIGOS */
+    .ArtigosDestaque{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    }
+    .ARTdestaque1,.ARTdestaque2, .ARTdestaque3{
+    height: 250px
+    }
+    .ARTdestaque1 h1{
+    font-size: 20px;
+    }
+    .ArtigosDestaque h2{
+        font-size: 20px;
+        }
+    h3{
+        padding: 5px;
+        font-size: 25px;
+    }
+    .ArtigosGerais{
+        padding: 40px 20px 50px 20px;
+        display: grid;
+        grid-template-columns: repeat(2 , 48%);
+        grid-template-rows: repeat(3);
+        grid-template-areas:
+        "artgeral1 artgeral2" 
+        "artgeral3 artgeral4"
+        "artgeral5 artgeral6";
+        width: 100%;
+        column-gap: 20px;
+        row-gap: 50px;
+    }
+    .ArtigosGerais span{
+        font-size: 12px;
+    }
+    .ArtigosGerais h1{
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    /* PAGINA CAMPANHA */
+    .container-campanhas{
+        background-color: #f1f1f1;
+        padding:40px 30px;
+        margin:40px 20px 40px 40px;
+        display: grid;
+        grid-template-columns: repeat(1 , 100%);
+        grid-template-rows: repeat(2);
+        grid-template-areas: "imgCampanha1" 
+                            "conteudoCampanha1";
+        gap: 25px;
+    }
+    .conteudoCampanha1 h1{
+        font-size: 26px;
+    }
+    .conteudoCampanha1 p{
+        font-size: 16px;
+        padding: 20px 0px;
+    }
+    .linkVerMais{
+        margin-left: 0px;
+    }
+    .LikeInscrito{
+        padding: 20px 0px 0px 0px;
+    }
+    /* PAGINA CONTATO */
+    .infos-contatos h1{
+        font-size: 24px;
+    }
+    .infos-contatos p{
+        font-size: 18px;
+        padding: 10px 5px 30px 5px;
+    }
+    .mensagem-contato{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mensagem-contato form label{
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    .mensagem-contato form input{
+        padding: 10px;
+    }
+    .mensagem-contato form button{
+        padding: 10px;
+        font-size: 16px;
+    }
+    /* PAGINA VENDO CAMPANHA */
+    .container-vendoCampanha{
+        padding: 45px 40px 70px 40px;
+    }
+    .container-vendoCampanha span{
+        font-size: 14px;
+    }
+    .imgVendoCampanha{
+        height: 350px;
+    }
+    .imgVendoCampanha h1{
+        font-size: 42px;
+        letter-spacing: 5px;
+    }
+    .infoCampanha p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .container-vendoCampanha h2{
+        font-size: 40px;
+    }
+    .beneficiosVendoCampanha{
+        flex-direction: column;
+        width: 100%;
+    }
+    .beneficioCampanha1, .beneficioCampanha2, .beneficioCampanha3{
+        width: 100%;
+    }
+    .beneficioCampanha1 i, .beneficioCampanha2 i, .beneficioCampanha3 i{
+        font-size: 40px;
+    }
+    .beneficiosVendoCampanha p{
+        font-size: 18px;
+    }
+    /* VENDO ARQUIVOS */
+    .container-vendoArtigo{
+        padding: 40px 40px 70px 40px;
+    }
+    .container-vendoArtigo span{
+        font-size: 15px;
+    }
+    .container-vendoArtigo h1{
+        font-size: 28px;
+    }
+    .container-vendoArtigo p{
+        font-size: 18px;
+    }
+}
